@@ -32,7 +32,7 @@ class ItemUseCaseTest {
 
     @OptIn(InternalCoroutinesApi::class)
     @Test
-    fun `flow is success result movies`() {
+    fun `flow is success result animals`() {
         runBlocking {
             coEvery { repo.getItemList(1) } returns flow { emit(Result.Success(animalList)) }
 
@@ -47,7 +47,7 @@ class ItemUseCaseTest {
     }
 
     @Test
-    fun `flow is loading result movies`() {
+    fun `flow is loading result animals`() {
         runBlocking {
             coEvery { repo.getItemList(1) } returns flow { emit(Result.Loading) }
 
@@ -62,7 +62,7 @@ class ItemUseCaseTest {
     }
 
     @Test
-    fun `flow is error result movies`() {
+    fun `flow is error result animals`() {
         runBlocking {
             coEvery { repo.getItemList(1) } returns flow { emit(Result.Error("Error")) }
 

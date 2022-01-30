@@ -53,7 +53,7 @@ object DataModule {
     }
 
     @Provides
-    fun provideMoviesDatabase(@ApplicationContext context: Context): Database {
+    fun provideDatabase(@ApplicationContext context: Context): Database {
         return Room.databaseBuilder(
             context,
             Database::class.java,
@@ -63,7 +63,7 @@ object DataModule {
     }
 
     @Provides
-    fun provideMovieDao(database: Database): Dao {
+    fun provideDao(database: Database): Dao {
         return database.getZooDao()
     }
 }
