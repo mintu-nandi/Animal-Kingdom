@@ -42,4 +42,4 @@ Having separate modules is not necessary, you can create all the layers in the a
 
 ## App screenshot
 
-<img src="screenshot/Booking_List.png" width="250"/> <img src="screenshot/Booking_details.png" width="250"/><img src="screenshot/Parking_Location_On_Map.png" width="250"/>
+<img src="screenshot/AnimalList.png" width="250"/>
