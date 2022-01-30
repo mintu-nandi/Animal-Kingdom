@@ -1,4 +1,4 @@
-# Animal-Kingdom - CLEAN Architecture with MVVM and Jetpack-Compose.
+# CLEAN Architecture with MVVM and Jetpack-Compose.
 
 ## About the app
 I have created this small app to showcase my skills. Launching screen in an app will show you the list of random animals and you will see the new random list if you do swipe to refresh into it.
