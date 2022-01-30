@@ -12,7 +12,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.animal.presentation.viewmodel.ZooViewModel
+import com.animal.presentation.viewmodel.HomeViewModel
 import com.animal.zoo.ui.util.*
 import com.google.accompanist.swiperefresh.SwipeRefresh
 import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
@@ -21,7 +21,7 @@ import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
 @Composable
 fun HomeScreen(
     navController: NavController,
-    viewModel: ZooViewModel = hiltViewModel()
+    viewModel: HomeViewModel = hiltViewModel()
 ) {
     val result = viewModel.state.collectAsState()
     val status = viewModel.loadingState.collectAsState()

@@ -11,11 +11,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.animal.presentation.viewmodel.ZooViewModel
+import com.animal.presentation.viewmodel.HomeViewModel
 
 @Composable
 fun ErrorComponent(
-    viewModel: ZooViewModel = hiltViewModel()
+    viewModel: HomeViewModel = hiltViewModel()
 ) {
     val result = viewModel.state.collectAsState()
     val status = viewModel.loadingState.collectAsState()

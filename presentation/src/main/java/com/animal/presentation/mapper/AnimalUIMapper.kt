@@ -1,14 +1,16 @@
 package com.animal.presentation.mapper
 
+import androidx.annotation.VisibleForTesting
 import com.animal.presentation.model.Animal
 import com.animal.domain.entity.Animal as DomainAnimal
 
-class ZooUIMapper {
+class AnimalUIMapper {
     fun toUI(list: List<DomainAnimal>): List<Animal> {
         return list.map { toUI(it) }
     }
 
-    private fun toUI(animal: DomainAnimal): Animal {
+    @VisibleForTesting
+    internal fun toUI(animal: DomainAnimal): Animal {
         return Animal(
             active_time = animal.active_time,
             animal_type = animal.animal_type,

@@ -1,6 +1,6 @@
 package com.animal.data.repository
 
-import com.animal.data.mapper.ZooDomainMapper
+import com.animal.data.mapper.AnimalDomainMapper
 import com.animal.data.source.local.LocalSource
 import com.animal.data.source.remote.RemoteSource
 import com.animal.domain.extension.repoFlow
@@ -20,9 +20,9 @@ class RepositoryImpl @Inject constructor(
             if (data.isNotEmpty()) {
                 localSource.addItemList(data)
             }
-            ZooDomainMapper().toDomain(localSource.getItemList())
+            AnimalDomainMapper().toDomain(localSource.getItemList())
         } catch (e: Exception) {
-            ZooDomainMapper().toDomain(localSource.getItemList())
+            AnimalDomainMapper().toDomain(localSource.getItemList())
         }
     }.flowOn(dispatcher)
 

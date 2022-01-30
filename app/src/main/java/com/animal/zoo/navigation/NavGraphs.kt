@@ -22,5 +22,15 @@ fun NavGraphs(navHostController: NavHostController) {
         ) {
             HomeScreen(navController = navHostController)
         }
+
+        composable(
+            route = Screen.Detail.route,
+            arguments = listOf(navArgument(DETAIL_ARGS_KEY) {
+                type = NavType.StringType
+            })
+        ) {
+            val id =  it.arguments?.getString(DETAIL_ARGS_KEY).toString()
+//            DetailScreen(navController = navHostController, id = id)
+        }
     }
 }

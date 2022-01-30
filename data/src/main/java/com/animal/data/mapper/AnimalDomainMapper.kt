@@ -1,15 +1,17 @@
 package com.animal.data.mapper
 
+import androidx.annotation.VisibleForTesting
 import com.animal.domain.entity.Animal as DomainAnimal
 import com.animal.data.model.Animal as DataAnimal
 
-internal class ZooDomainMapper {
+internal class AnimalDomainMapper {
 
     fun toDomain(list: List<DataAnimal>): List<DomainAnimal> {
         return list.map { toDomain(it) }
     }
 
-    private fun toDomain(animal: DataAnimal): DomainAnimal {
+    @VisibleForTesting
+    internal fun toDomain(animal: DataAnimal): DomainAnimal {
         return DomainAnimal(
          active_time = animal.active_time,
          animal_type = animal.animal_type,
