@@ -31,7 +31,7 @@ Having separate modules is not necessary, you can create all the layers in the a
 
 ## Libraries
 
-- **Jetpack-Compose: For view and design to give modern looks and feel.
+- **Jetpack-Compose**: For view and design to give modern looks and feel.
 - **Kotlin-Coroutine-Flow**:for asynchronous task, reactive programming, mapping, transformation.
 - **Hilt**: for Dependency Injection
 - **Compose-Navigation**: for switching between screens
