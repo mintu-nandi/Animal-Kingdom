@@ -1,6 +1,5 @@
 package com.animal.zoo.ui.compose
 
-import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsNotDisplayed
 import androidx.compose.ui.test.hasTestTag
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
@@ -20,7 +19,7 @@ class HomeScreenKtTest {
     @Test
     fun testLazyColumn() {
         composeTestRule.setContent {
-            AnimalZooTheme() {
+            AnimalZooTheme {
                 HomeScreen(rememberNavController())
             }
         }

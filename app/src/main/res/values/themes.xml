@@ -19,7 +19,4 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.AnimalKingdom.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.AnimalKingdom.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

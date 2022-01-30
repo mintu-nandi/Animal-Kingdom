@@ -15,7 +15,6 @@
         <activity
             android:name="com.animal.zoo.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.AnimalKingdom.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
