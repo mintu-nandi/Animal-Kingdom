@@ -16,7 +16,7 @@ First of all the layers in CLEAN architecture has been separated into individual
 Having separate modules is not necessary, you can create all the layers in the app modules itself. Having separate modules and depending on the intended modules prevent accidental usage of a classes in unintended places. There are also couple of benefits mentioned below.
 
 
-<img src="screenshot/Clean_Arch.png" alt="CLEAN Architecture in Android" style="float: left; margin-right: 10px;">
+<img src="screenshot/Clean-Arch.png" alt="CLEAN Architecture in Android" style="float: left; margin-right: 10px;">
 
 ### Reason for using CLEAN architecture
 
