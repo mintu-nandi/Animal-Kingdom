@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.animal.presentation.viewmodel.HomeViewModel
@@ -35,10 +36,14 @@ fun HomeScreen(
             modifier = Modifier
                 .fillMaxSize()
         ) {
-            CircularProgressBar(isDisplayed = status.value)
+            CircularProgressBar(
+                isDisplayed = status.value,
+                modifier = Modifier.testTag("progress_bar")
+            )
             ErrorComponent()
             val listState = rememberLazyListState()
-            LazyColumn(state = listState) {
+            LazyColumn(state = listState,
+                modifier = Modifier.testTag("animal-list-testTag")) {
                 items(
                     items = result.value,
                     itemContent = { item ->

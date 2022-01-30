@@ -9,10 +9,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun CircularProgressBar(isDisplayed: Boolean) {
+fun CircularProgressBar(isDisplayed: Boolean, modifier: Modifier) {
     if (isDisplayed) {
         Box(
-            modifier = Modifier
+            modifier = modifier
                 .fillMaxWidth()
                 .padding(top = 20.dp),
             contentAlignment = Alignment.Center
