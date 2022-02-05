@@ -1,7 +1,10 @@
 package com.animal.presentation.model
 
+import android.os.Parcelable
 import android.util.Log
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class Animal(
     val active_time: String,
     val animal_type: String,
@@ -17,7 +20,7 @@ data class Animal(
     val name: String,
     val weight_max: String,
     val weight_min: String
-) {
+): Parcelable {
     fun lifespan() = run {
         var result = ""
         try {
