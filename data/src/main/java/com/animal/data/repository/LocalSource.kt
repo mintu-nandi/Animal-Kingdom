@@ -1,4 +1,4 @@
-package com.animal.data.source.local
+package com.animal.data.repository
 
 import com.animal.data.model.Animal
 

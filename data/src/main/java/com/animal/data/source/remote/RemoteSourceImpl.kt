@@ -2,6 +2,7 @@ package com.animal.data.source.remote
 
 import com.animal.data.api.ApiService
 import com.animal.data.model.Animal
+import com.animal.data.repository.RemoteSource
 import javax.inject.Inject
 
 class RemoteSourceImpl @Inject constructor(

@@ -3,8 +3,6 @@ package com.animal.data.repository
 import com.animal.domain.extension.Result
 import com.animal.data.model.Animal
 import com.animal.data.model.MockAnimalList
-import com.animal.data.source.local.LocalSource
-import com.animal.data.source.remote.RemoteSource
 import com.google.common.truth.Truth
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery

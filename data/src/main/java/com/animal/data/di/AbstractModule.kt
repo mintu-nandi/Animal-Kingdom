@@ -1,9 +1,9 @@
 package com.animal.data.di
 
 import com.animal.data.repository.RepositoryImpl
-import com.animal.data.source.local.LocalSource
+import com.animal.data.repository.LocalSource
 import com.animal.data.source.local.LocalSourceImpl
-import com.animal.data.source.remote.RemoteSource
+import com.animal.data.repository.RemoteSource
 import com.animal.data.source.remote.RemoteSourceImpl
 import com.animal.domain.repository.Repository
 import dagger.Binds

@@ -7,9 +7,9 @@ import com.animal.data.api.RetrofitBuilder
 import com.animal.data.repository.RepositoryImpl
 import com.animal.data.source.local.Dao
 import com.animal.data.source.local.Database
-import com.animal.data.source.local.LocalSource
+import com.animal.data.repository.LocalSource
 import com.animal.data.source.local.LocalSourceImpl
-import com.animal.data.source.remote.RemoteSource
+import com.animal.data.repository.RemoteSource
 import com.animal.data.source.remote.RemoteSourceImpl
 import dagger.Module
 import dagger.Provides

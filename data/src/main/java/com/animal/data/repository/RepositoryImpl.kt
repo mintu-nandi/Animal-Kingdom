@@ -1,8 +1,6 @@
 package com.animal.data.repository
 
 import com.animal.data.mapper.AnimalDomainMapper
-import com.animal.data.source.local.LocalSource
-import com.animal.data.source.remote.RemoteSource
 import com.animal.domain.extension.repoFlow
 import com.animal.domain.repository.Repository
 import kotlinx.coroutines.CoroutineDispatcher
